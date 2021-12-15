@@ -1,6 +1,6 @@
-class Jumper{
-    private int start;
-    private int end;
+public class Jumper{
+    int start;
+    int end;
     public Jumper(int start,int end){
         this.start=start;
         this.end=end;
@@ -16,9 +16,16 @@ class Snake extends Jumper{
     public Snake(int start,int end){
         super(start,end);
     }
+    public int getendpoint(){
+        return end;
+    }
+        
 }
 class Ladder extends Jumper{
     public Ladder(int start,int end){
         super(start,end);
+    }
+    public int getendpoint(){
+        return end;
     }
 }
