@@ -12,8 +12,8 @@ public class Player {
     public int getLocation() {
     	return location;
     }
-    public void setLocation(int loc) {
-    	location = loc;
+    public void setLocation(int position) {
+    	location = position;
     }
 
 }
